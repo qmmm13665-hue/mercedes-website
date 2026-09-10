@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الرئيسية | مرسيدس بنز</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="nav-container">
+            <a href="index.html" class="logo">MERCEDES</a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">الرئيسية</a></li>
+                <li><a href="categories.html">فئات السيارات</a></li>
+                <li><a href="cart.html">سلة المحفوظات 🛒</a></li>
+                <li><a href="contact.html">تواصل معنا</a></li>
+                <li><a href="login.html">تسجيل الدخول</a></li>
+                <li><a href="register.html">إنشاء حساب</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container my-4">
+        <!-- شريط صور متحرك (Carousel / Slider) -->
+        <section class="mb-5">
+            <h2 class="text-center mb-3">أحدث الموديلات</h2>
+            <div class="swiper mySwiper" style="height: 350px; border-radius: 10px; overflow: hidden;">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="images/c-class.jpeg" class="w-100 h-100 object-fit-cover" alt="Mercedes 1"></div>
+                    <div class="swiper-slide"><img src="images/car4.jpg" class="w-100 h-100 object-fit-cover" alt="Mercedes 2"></div>
+                    <div class="swiper-slide"><img src="images/car12.jpg" class="w-100 h-100 object-fit-cover" alt="Mercedes 3"></div>
+                </div>
+            </div>
+        </section>
+
+        <div class="row">
+            <section class="col-md-8">
+                <h2>عالم من الفخامة والأداء</h2>
+                <p>تعتبر مرسيدس-بنز علامة تجارية عالمية للسيارات وهي فرع من شركة داينمك الألمانية. تشتهر بالسيارات الفاخرة وسيارات الحافلات والشاحنات.</p>
+                
+                
+            </section>
+
+            <aside class="col-md-4">
+                <h4>عروض خاصة 🌟</h4>
+                <ul>
+                    <li>خصم 10% على صيانة فئة S-Class.</li>
+                    <li>تأمين مجاني للسنة الأولى عند شراء C-Class.</li>
+                    <li>ضمان 5 سنوات مفتوح الكيلومترات.</li>
+                </ul>
+            </aside>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 جميع الحقوق محفوظة لشركة مرسيدس بنز</p>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+        const swiper = new Swiper('.mySwiper', { loop: true, autoplay: { delay: 3000 } });
+    </script>
+</body>
+</html>
